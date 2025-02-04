@@ -1,0 +1,119 @@
+.home{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    padding: 50px;
+    background-color: #F0F8FF;
+    align-items: center;
+    justify-content: space-around;
+}
+.home1{
+    flex-basis: 40%;
+   display: flex;
+   flex-direction: column;
+   
+}
+.home2{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}button {
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 10px 15px;
+    border: 2px solid rgb(232, 48, 48);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 700;
+    width: max-content;
+    transition: 0.3s;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: rgb(232, 48, 48);
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    right: 100%; /* Starts outside of the button */
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: rgb(232, 48, 48);
+    transition: right 0.3s ease;
+    z-index: 0; /* Below the text and icon */
+}
+
+button:hover::after {
+    right: 0%; /* Fills the entire button */
+}
+
+button span, 
+button .icon-download {
+    position: relative; /* Keeps text and icon above the background */
+    z-index: 1; /* Above the ::after pseudo-element */
+    transition: color 0.3s ease;
+}
+
+button:hover {
+    color: white; /* Changes text and icon color on hover */
+}
+
+
+
+p{
+    padding: 10px 0;
+}
+.line{
+    padding: 1rem 0;
+    display: flex;
+    gap: 10px;
+    
+}
+
+.socail{
+    border: 2px solid black;
+   font-size: 35px;
+   padding: 3px;
+   border-radius: 50px;
+   transition: 1.2s;
+}
+.socail:hover{
+    border: rgb(232, 48, 48);
+    transform: translateY(-10px);
+}
+.dash-img{
+    height: 450px;
+    width: 450px;
+    
+   
+}
+.dash-img img{
+    width: 100%;
+    background-color:black ;
+     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    object-fit: cover;
+}
+
+@media (max-width:786px) {
+    .home{
+        height: max-content;
+        flex-direction: column;
+        
+    }
+    .dash-img{
+        height: 250px;
+        width: 250px;
+    }
+    .home1{
+        order: 2;
+        font-size: 12px;
+    }
+   
+}

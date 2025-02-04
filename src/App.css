@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", serif;
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+a{
+  color: black;
+  
+}
+a:hover{
+  color: rgb(232, 48, 48);
+}

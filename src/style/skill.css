@@ -1,0 +1,39 @@
+.skills{
+    height: 40vh;
+    width: 100%;
+    background-color: aliceblue;
+}
+.skill-sections{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.heading{
+    font-size: 25px;
+    font-weight: 600;
+}
+.skill-section{
+    width: 90%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.skill-icon{
+    font-size: 5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    /* color: #E83030; */
+}
+@media (max-width:786px) {
+    .skill-section{
+        width: 100%;
+    }
+    .skill-icon{
+        font-size: 3.5rem;
+    }
+}
